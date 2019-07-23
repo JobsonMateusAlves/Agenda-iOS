@@ -9,6 +9,8 @@ import Foundation
 internal enum L10n {
 
   internal enum Common {
+    /// Fechar
+    internal static let fechar = L10n.tr("Localizable", "common.fechar")
     /// Ok
     internal static let ok = L10n.tr("Localizable", "common.ok")
   }
@@ -16,6 +18,11 @@ internal enum L10n {
   internal enum Contatos {
     /// Meus contatos
     internal static let title = L10n.tr("Localizable", "contatos.title")
+
+    internal enum Criar {
+      /// Criar contato
+      internal static let title = L10n.tr("Localizable", "contatos.criar.title")
+    }
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name

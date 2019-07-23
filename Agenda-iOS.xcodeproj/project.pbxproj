@@ -14,6 +14,7 @@
 		83C2367922E735470004FE5F /* ContatosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2367822E735470004FE5F /* ContatosService.swift */; };
 		83C2367D22E73A980004FE5F /* ContatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2367B22E73A980004FE5F /* ContatoTableViewCell.swift */; };
 		83C2367E22E73A980004FE5F /* ContatoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C2367C22E73A980004FE5F /* ContatoTableViewCell.xib */; };
+		83C2368022E74E250004FE5F /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2367F22E74E250004FE5F /* CreateViewController.swift */; };
 		83CD878322E1E55F00E769A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD878222E1E55F00E769A4 /* AppDelegate.swift */; };
 		83CD878522E1E55F00E769A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD878422E1E55F00E769A4 /* ViewController.swift */; };
 		83CD878822E1E55F00E769A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CD878622E1E55F00E769A4 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		83C2367822E735470004FE5F /* ContatosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosService.swift; sourceTree = "<group>"; };
 		83C2367B22E73A980004FE5F /* ContatoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoTableViewCell.swift; sourceTree = "<group>"; };
 		83C2367C22E73A980004FE5F /* ContatoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContatoTableViewCell.xib; sourceTree = "<group>"; };
+		83C2367F22E74E250004FE5F /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		83CD877F22E1E55F00E769A4 /* Agenda-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agenda-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CD878222E1E55F00E769A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83CD878422E1E55F00E769A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		83DC6A4422E603CF007D2781 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				83C2367F22E74E250004FE5F /* CreateViewController.swift */,
 				83DC6A4122E603AE007D2781 /* ContatosViewController.swift */,
 				83C2367A22E73A7D0004FE5F /* Cells */,
 			);
@@ -408,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C2368022E74E250004FE5F /* CreateViewController.swift in Sources */,
 				83CD878522E1E55F00E769A4 /* ViewController.swift in Sources */,
 				83DC6A4222E603AE007D2781 /* ContatosViewController.swift in Sources */,
 				83DC6A3E22E5F795007D2781 /* Colors.swift in Sources */,

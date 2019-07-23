@@ -44,4 +44,24 @@ class ContatosService {
         }
     }
     
+    func postContato(contatoView: ContatoView) {
+        
+        let contato = ContatoViewModel.getAsModel(contatoView: contatoView)
+        
+        ContatosRequestFactory.postContato(contato: contato).validate().responseObject { (response: DataResponse<Contato>) in
+            
+            switch response.result {
+            case .success:
+                
+                if let contato = response.result.value {
+                    ContatoViewModel.saveAll(objects: [contato])
+                }
+                self.delegate.success()
+                
+            case .failure(let error):
+                
+                self.delegate.failure(error: error.localizedDescription)
+            }
+        }
+    }
 }

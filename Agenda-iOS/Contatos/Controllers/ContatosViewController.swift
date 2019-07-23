@@ -28,7 +28,10 @@ class ContatosViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(cellType: ContatoTableViewCell.self)
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.loadData()
     }
     
@@ -40,13 +43,16 @@ class ContatosViewController: UIViewController {
     }
     
     func setupCreateButton() {
-        
+
         let button = UIBarButtonItem(image: Asset.createIcon.image, style: .done, target: self, action: #selector(ContatosViewController.openCreate))
-        self.navigationController?.navigationItem.leftBarButtonItem = button
+        self.navigationItem.leftBarButtonItem = button
     }
     
     @objc func openCreate() {
         
+        let controller = StoryboardScene.Contatos.createViewController.instantiate()
+        
+        self.present(UINavigationController(rootViewController: controller), animated: true)
     }
 }
 

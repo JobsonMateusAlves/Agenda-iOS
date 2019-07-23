@@ -57,6 +57,8 @@ internal enum StoryboardScene {
     internal static let storyboardName = "Contatos"
 
     internal static let contatosViewController = SceneType<Agenda_iOS.ContatosViewController>(storyboard: Contatos.self, identifier: "ContatosViewController")
+
+    internal static let createViewController = SceneType<Agenda_iOS.CreateViewController>(storyboard: Contatos.self, identifier: "CreateViewController")
   }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"

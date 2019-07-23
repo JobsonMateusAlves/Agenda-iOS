@@ -76,6 +76,19 @@ class ContatoViewModel {
         return self.getAsView(contatos: self.get())
     }
     
+    static func getAsModel(contatoView: ContatoView) -> Contato {
+        
+        var contato = Contato()
+        
+        contato.name = contatoView.name
+        contato.email = contatoView.email
+        contato.phone = contatoView.phone
+        contato.picture = contatoView.picture
+        contato.birth.value = contatoView.birth
+        
+        return contato
+    }
+    
     static func deleteContatos() {
         let results = uiRealm.objects(Contato.self)
         

@@ -1,2 +1,6 @@
 "common.ok" = "Ok";
+"common.fechar" = "Fechar";
+
 "contatos.title" = "Meus contatos";
+"contatos.criar.title" = "Criar contato";
+
