@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         do {
@@ -31,6 +30,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         print("DOCUMENTS: ", Realm.Configuration.defaultConfiguration.fileURL ?? "")
+        SessionControl.setHeaders()
+        
+        if SessionControl.isSessionActive {
+            
+            self.window?.rootViewController = UINavigationController(rootViewController: StoryboardScene.Contatos.contatosViewController.instantiate())
+        } else {
+            
+            self.window?.rootViewController = StoryboardScene.Main.viewController.instantiate()
+        }
+        
+        self.window?.makeKeyAndVisible()
         return true
     }
 

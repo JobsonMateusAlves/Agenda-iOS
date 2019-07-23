@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83C2367122E72F930004FE5F /* Contatos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C2367022E72F930004FE5F /* Contatos.storyboard */; };
+		83C2367322E730FD0004FE5F /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2367222E730FD0004FE5F /* Contato.swift */; };
+		83C2367522E732610004FE5F /* ContatoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2367422E732610004FE5F /* ContatoViewModel.swift */; };
+		83C2367722E735390004FE5F /* ContatosRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2367622E735390004FE5F /* ContatosRequestFactory.swift */; };
+		83C2367922E735470004FE5F /* ContatosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2367822E735470004FE5F /* ContatosService.swift */; };
+		83C2367D22E73A980004FE5F /* ContatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C2367B22E73A980004FE5F /* ContatoTableViewCell.swift */; };
+		83C2367E22E73A980004FE5F /* ContatoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C2367C22E73A980004FE5F /* ContatoTableViewCell.xib */; };
 		83CD878322E1E55F00E769A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD878222E1E55F00E769A4 /* AppDelegate.swift */; };
 		83CD878522E1E55F00E769A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CD878422E1E55F00E769A4 /* ViewController.swift */; };
 		83CD878822E1E55F00E769A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CD878622E1E55F00E769A4 /* Main.storyboard */; };
@@ -33,6 +40,13 @@
 		0B07036EA2122B0EDAEE3879 /* Pods-Agenda-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Agenda-iOS/Pods-Agenda-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2B06AA5108DC7FF1256A595F /* Pods_Agenda_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Agenda_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2B97B5777977FF1CE19042 /* Pods-Agenda-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Agenda-iOS.release.xcconfig"; path = "Target Support Files/Pods-Agenda-iOS/Pods-Agenda-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		83C2367022E72F930004FE5F /* Contatos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contatos.storyboard; sourceTree = "<group>"; };
+		83C2367222E730FD0004FE5F /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
+		83C2367422E732610004FE5F /* ContatoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoViewModel.swift; sourceTree = "<group>"; };
+		83C2367622E735390004FE5F /* ContatosRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosRequestFactory.swift; sourceTree = "<group>"; };
+		83C2367822E735470004FE5F /* ContatosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosService.swift; sourceTree = "<group>"; };
+		83C2367B22E73A980004FE5F /* ContatoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoTableViewCell.swift; sourceTree = "<group>"; };
+		83C2367C22E73A980004FE5F /* ContatoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContatoTableViewCell.xib; sourceTree = "<group>"; };
 		83CD877F22E1E55F00E769A4 /* Agenda-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agenda-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CD878222E1E55F00E769A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83CD878422E1E55F00E769A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +97,40 @@
 				7D2B97B5777977FF1CE19042 /* Pods-Agenda-iOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		83C2366D22E72F5A0004FE5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83C2367222E730FD0004FE5F /* Contato.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83C2366E22E72F5F0004FE5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				83C2367422E732610004FE5F /* ContatoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		83C2366F22E72F660004FE5F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				83C2367622E735390004FE5F /* ContatosRequestFactory.swift */,
+				83C2367822E735470004FE5F /* ContatosService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		83C2367A22E73A7D0004FE5F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				83C2367B22E73A980004FE5F /* ContatoTableViewCell.swift */,
+				83C2367C22E73A980004FE5F /* ContatoTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		83CD877622E1E55F00E769A4 = {
@@ -205,6 +253,10 @@
 		83DC6A4322E603BE007D2781 /* Contatos */ = {
 			isa = PBXGroup;
 			children = (
+				83C2367022E72F930004FE5F /* Contatos.storyboard */,
+				83C2366D22E72F5A0004FE5F /* Model */,
+				83C2366E22E72F5F0004FE5F /* ViewModel */,
+				83C2366F22E72F660004FE5F /* Service */,
 				83DC6A4422E603CF007D2781 /* Controllers */,
 			);
 			path = Contatos;
@@ -214,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				83DC6A4122E603AE007D2781 /* ContatosViewController.swift */,
+				83C2367A22E73A7D0004FE5F /* Cells */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,7 +332,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C2367E22E73A980004FE5F /* ContatoTableViewCell.xib in Resources */,
 				83CD878D22E1E56200E769A4 /* LaunchScreen.storyboard in Resources */,
+				83C2367122E72F930004FE5F /* Contatos.storyboard in Resources */,
 				83CD879D22E1E7F800E769A4 /* Colors.json in Resources */,
 				83CD879B22E1E7B100E769A4 /* Localizable.strings in Resources */,
 				83CD878A22E1E56200E769A4 /* Assets.xcassets in Resources */,
@@ -356,7 +411,10 @@
 				83CD878522E1E55F00E769A4 /* ViewController.swift in Sources */,
 				83DC6A4222E603AE007D2781 /* ContatosViewController.swift in Sources */,
 				83DC6A3E22E5F795007D2781 /* Colors.swift in Sources */,
+				83C2367322E730FD0004FE5F /* Contato.swift in Sources */,
 				83DC6A3D22E5F795007D2781 /* Assets.swift in Sources */,
+				83C2367522E732610004FE5F /* ContatoViewModel.swift in Sources */,
+				83C2367D22E73A980004FE5F /* ContatoTableViewCell.swift in Sources */,
 				83CD878322E1E55F00E769A4 /* AppDelegate.swift in Sources */,
 				83DC6A3C22E5F795007D2781 /* Localizable.swift in Sources */,
 				83CD87A622E1FFFD00E769A4 /* AutenticacaoService.swift in Sources */,
@@ -364,6 +422,8 @@
 				83DC6A3422E5DD16007D2781 /* SessionControl.swift in Sources */,
 				83CD87A822E2001100E769A4 /* AutenticacaoRequestFactory.swift in Sources */,
 				83DC6A3822E5F78D007D2781 /* Storyboards.swift in Sources */,
+				83C2367722E735390004FE5F /* ContatosRequestFactory.swift in Sources */,
+				83C2367922E735470004FE5F /* ContatosService.swift in Sources */,
 				83CD87A422E1F34600E769A4 /* Usuario.swift in Sources */,
 				83DC6A3622E5E325007D2781 /* CadastroViewController.swift in Sources */,
 				83DC6A4022E5FFDE007D2781 /* ScreenManager.swift in Sources */,

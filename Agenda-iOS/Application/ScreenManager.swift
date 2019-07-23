@@ -15,7 +15,7 @@ class ScreenManager {
         
         if SessionControl.isSessionActive {
             
-            UIApplication.shared.keyWindow?.rootViewController = StoryboardScene.Main.contatosViewController.instantiate()
+            UIApplication.shared.keyWindow?.rootViewController = UINavigationController(rootViewController: StoryboardScene.Contatos.contatosViewController.instantiate())
         } else {
             UIApplication.shared.keyWindow?.rootViewController = StoryboardScene.Main.viewController.instantiate()
         }

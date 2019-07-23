@@ -8,11 +8,6 @@
 
 import UIKit
 
-//protocol CadastroViewControllerDelegate {
-//
-//    func cadastrado()
-//}
-
 
 class CadastroViewController: UIViewController {
     @IBOutlet weak var emalTextField: UITextField!
@@ -23,7 +18,6 @@ class CadastroViewController: UIViewController {
     @IBOutlet weak var cancelarButton: UIButton!
     
     var service: AutenticacaoService!
-//    var delegate: CadastroViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -26,12 +26,16 @@ class ViewController: UIViewController {
     
     
     @IBAction func login(_ sender: Any) {
-//        self.service.post
+        if let email = self.emailTextField.text,
+            let senha = self.senhaTextField.text,
+            !email.isEmpty && !senha.isEmpty {
+            
+            self.service.postLogin(email: email, senha: senha)
+        }
     }
     @IBAction func cadastrar(_ sender: Any) {
         
         let controller = StoryboardScene.Main.cadastroViewController.instantiate()
-//        controller.delegate = self
         
         self.present(controller, animated: true)
     }
@@ -39,18 +43,11 @@ class ViewController: UIViewController {
 
 extension ViewController: AutenticacaoServiceDelegate {
     func success() {
-        
+    
+        ScreenManager.setupInitialViewController()
     }
     
     func failure(error: String) {
         print(error)
     }
 }
-
-//extension ViewController: CadastroViewControllerDelegate {
-//    
-//    func cadastrado() {
-//        
-//        
-//    }
-//}
