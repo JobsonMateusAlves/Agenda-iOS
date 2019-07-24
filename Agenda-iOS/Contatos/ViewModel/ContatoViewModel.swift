@@ -76,6 +76,13 @@ class ContatoViewModel {
         return self.getAsView(contatos: self.get())
     }
     
+    static func get(by id: Int) -> ContatoView {
+        
+        let result = uiRealm.object(ofType: Contato.self, forPrimaryKey: id)
+        
+        return self.getAsView(contato: result)
+    }
+    
     static func getAsModel(contatoView: ContatoView) -> Contato {
         
         var contato = Contato()

@@ -28,6 +28,8 @@ class ContatosViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(cellType: ContatoTableViewCell.self)
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,6 +81,16 @@ extension ContatosViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         return CGFloat.leastNormalMagnitude
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let contato = self.contatos[indexPath.row]
+        
+        let controller = StoryboardScene.Contatos.createViewController.instantiate()
+        controller.contatoId = contato.id
+        
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 

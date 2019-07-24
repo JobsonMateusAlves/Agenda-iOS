@@ -177,6 +177,7 @@
                         <viewLayoutGuide key="safeArea" id="CDx-B1-ASd"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="1De-b8-wve" id="Bl0-rP-Od9"/>
                         <outlet property="emailTextField" destination="MAS-hg-GUV" id="jSz-OK-yZ0"/>
                         <outlet property="imageTextField" destination="zQn-7j-MQK" id="foj-0b-ev4"/>
                         <outlet property="nascimentoTextField" destination="5MY-37-FWJ" id="anX-LV-09R"/>
